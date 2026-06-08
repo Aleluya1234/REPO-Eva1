@@ -1,3 +1,13 @@
+/* Variables CSS */
+:root {
+    --color-primario: #1d4ed8;
+    --color-texto: #222;
+    --color-fondo: #f4f4f4;
+    --color-blanco: #ffffff;
+}
+
+/* IA generó la estructura inicial del Flexbox y Grid */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +16,15 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     line-height: 1.6;
 }
 
+/* Header */
+
 header {
-    background-color: white;
+    background-color: var(--color-blanco);
     padding: 20px 40px;
     border-bottom: 1px solid #ccc;
 
@@ -21,27 +33,36 @@ header {
     align-items: center;
 }
 
-nav {
+header h1 {
+    color: var(--color-primario);
+}
+
+/* Navegación */
+
+nav ul {
     display: flex;
     gap: 20px;
+    list-style: none;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-texto);
     font-weight: bold;
 }
+
+/* Hero */
 
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background-color: white;
+    background-color: var(--color-blanco);
 }
 
 .hero h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #1d4ed8;
+    color: var(--color-primario);
 }
 
 .hero p {
@@ -52,12 +73,14 @@ nav a {
 .hero button {
     padding: 12px 24px;
     border: none;
-    background-color: #1d4ed8;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* Servicios */
 
 #servicios {
     padding: 60px 40px;
@@ -75,7 +98,7 @@ nav a {
 }
 
 .tarjeta {
-    background-color: white;
+    background-color: var(--color-blanco);
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -85,14 +108,18 @@ nav a {
     margin-bottom: 15px;
 }
 
+/* Nosotros */
+
 #nosotros {
     padding: 60px 40px;
-    background-color: white;
+    background-color: var(--color-blanco);
 }
 
 #nosotros h2 {
     margin-bottom: 20px;
 }
+
+/* Contacto */
 
 #contacto {
     padding: 60px 40px;
@@ -118,17 +145,18 @@ form button {
     width: 150px;
     padding: 12px;
     border: none;
-    background-color: #1d4ed8;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     cursor: pointer;
     border-radius: 5px;
 }
 
+/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #222;
-    color: white;
+    background-color: var(--color-texto);
+    color: var(--color-blanco);
     margin-top: 40px;
 }
-<!-- Use la IA para el estilo-->
